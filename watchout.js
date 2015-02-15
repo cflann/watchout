@@ -136,7 +136,7 @@ var collisionCheck = function() {
 // update enemies on board
 var update = function() {
   gameBoard.selectAll('.enemy').data(createEnemies(gameObject.nEnemies))
-                        .transition().duration(1000)
+                        .transition().duration(1500)
                         .attr('cx', function(d){
                           return axes.x(d.x) + "px";
                         })
@@ -162,7 +162,7 @@ var highScore = function() {
 
 setInterval(function() {
   update();
-}, 2000);
+}, 1500);
 
 setInterval(function() {
   //console.log(collisionCheck());
